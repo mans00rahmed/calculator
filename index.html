@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Calculator -->
     <div class="main">
         <div>
-            <input id="result" type="text" class="result" style="border-color: black; border-radius: 5px; background-color: white;">
+            <input id="result" type="text" class="result"
+                style="border-color: black; border-radius: 5px; background-color: white;">
         </div>
         <div>
             <button class="btn" style="width: 99%;" onclick="clearResult()">Ce</button>
         </div>
+        
+        <div>
+            <button class="btn" onclick="sin()">sin</button>
+            <button class="btn" onclick="sin()">cos</button>
+            <button class="btn" onclick="sin()">tan</button>
+            <button class="btn" onclick="back()">⇦</button>
+        </div>
+        <div>
+            <button class="btn" onclick="sininv()">sin¹</button>
+            <button class="btn" onclick="sin()">cos¹</button>
+            <button class="btn" onclick="sin()">tan¹</button>
+            <button class="btn" onclick="log()">log</button>
+        </div>
+        <hr>
         <div>
             <button class="btn" onclick="square()">x²</button>
             <button class="btn" onclick="getNumber('%')">%</button>
@@ -48,4 +65,5 @@
 
 </body>
 <script src="app.js"></script>
+
 </html>
